@@ -1,0 +1,719 @@
+/************************** MOBILE DESIGN **************************/
+
+/**** GENERAL ****/
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    margin: 0 auto;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.divider {
+    margin: 0 auto;
+    height: 5px;
+    width: 20%;
+    border-bottom: 3px solid black;
+}
+
+nav {
+    height: 60px;
+}
+
+.title {
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.ctaButton:hover {
+    transform: scale(1.3);
+}
+
+.topBackgroundContainer {
+    position: absolute;
+    background: url("../img/bigbluedesktop.png") no-repeat;
+    background-size: 2000px 1000px;
+}
+
+/************************************** TYPOGRAPHY *************************************************************/
+
+/* FONTS */
+/* "Norwester" font */
+@import url(//db.onlinewebfonts.com/c/7bf226306214181d5e917ed5bda2301c?family=Norwester);
+@font-face {font-family: "Norwester"; src: url("//db.onlinewebfonts.com/t/7bf226306214181d5e917ed5bda2301c.eot"); src: url("//db.onlinewebfonts.com/t/7bf226306214181d5e917ed5bda2301c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7bf226306214181d5e917ed5bda2301c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/7bf226306214181d5e917ed5bda2301c.woff") format("woff"), url("//db.onlinewebfonts.com/t/7bf226306214181d5e917ed5bda2301c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/7bf226306214181d5e917ed5bda2301c.svg#Norwester") format("svg"); }
+
+nav {
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+.title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5em;
+    font-weight: 800;
+}
+
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.1em;
+    font-weight: 800;
+}
+
+.headerTitleContainer h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.headerTitleContainer h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.aboutTextContainers h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    font-weight: 800;
+}
+
+.aboutTextContainers p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.portText {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.1px;
+}
+
+.contactSection h1 {
+    font-size: 2.5em;
+}
+
+/**** COLOURS AND BACKGROUNDS ****/
+
+body {
+    background-color: #FFFFFF
+}
+
+.mainContainer {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+
+nav li a {
+    color: rgb(255, 255, 255);
+}
+
+.button a {
+    color: white
+}
+
+#headerText {
+    color: rgb(233, 233, 233);
+}
+
+#headerText h1 {
+    text-shadow: 3px 3px 4px rgba(150, 150, 150, 1);
+    font-size: 2em;
+}
+
+.menu {
+    background-color: rgba(0,0,0,0);
+}
+
+/**** NAVBAR ****/
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    min-height: 80px;
+}
+
+ul {
+    margin-top: 0;
+    list-style-type: none;
+}
+
+.logo img {
+    padding-top: 6px;
+    height: 60px;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.menu li a {
+    padding: 9px 9px;
+    display: block;
+}
+
+.item a:hover {
+    transform: scale(1.2);
+}
+
+.toggle {
+    cursor: pointer;
+}
+
+
+.bars {
+    background: rgb(250, 250, 250);
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+
+.bars::before,.bars::after {
+    background: rgb(250, 250, 250);
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+}
+
+.bars::before {
+    top: 5px;
+}
+
+.bars::after {
+    top: -5px;
+}
+
+/* Mobile Menu */
+
+.menu {
+    position: relative;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle {
+    padding-right: 15px;
+    position: relative;
+    bottom: 5px;
+    order: 1;
+    cursor: pointer;
+}
+
+.item.button {
+    margin-right: 30px;
+    order: 2;
+}
+
+.item {
+   width: 100%;
+   text-align: center; 
+   order: 3;
+   display: none;
+}
+
+.item.active {
+    display: block;
+    transition: all 0.3s;
+}
+
+/**** Tablet Menu ****/
+
+@media all and (min-width: 468px) {
+    .menu {
+        justify-content: center;
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    .item.button {
+        margin-left: 20px;
+        width: auto;
+        border: 1;
+        display: block;
+    }
+
+    .toggle {
+        order: 2;
+    }
+
+    .button a {
+        text-decoration: none;
+        background: teal;
+        border: 1px solid #006d6d;
+        border-radius: 50em;
+    }
+
+    .button a:hover {
+        transition: .25s;
+    }
+
+}
+
+/**** Desktop Menu ****/
+
+@media all and (min-width: 768px) {
+    .item {
+        display: block;
+        width: auto;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    .logo {
+        order: 0;
+    }
+
+    .item {
+        order: 1;
+    }
+
+    .button {
+        order: 2;
+    }
+
+    .menu li {
+        padding: 0;
+    }
+
+    .menu li.button {
+        padding-right: 0;
+    }
+}
+
+
+/**************************************************** HEADER ********************************************************/
+
+.headerContainer {
+    height: 100vh;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+
+.headerContainer {
+    color: rgb(255, 255, 255);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.headerImageContainer img {
+    width: 150px;
+    margin: 30px;
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.headerContainer button {
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 30px;
+    height: 70px;
+    width: 220px;
+    font-size: 1em;
+    text-decoration: none;
+    background: teal;
+    border: 1px solid #006d6d;
+    border-radius: 50em;
+    color: rgb(255, 255, 255);
+}
+
+.headerContainer button:hover {
+    transform: scale(1.2);
+}
+
+
+
+/**************************************************** ABOUT SECTION ****************************************************/
+
+.aboutSection img {
+    border-radius: 15px;
+    margin: 0 auto;
+    width: 500px;
+    height: 333px;
+}
+
+.aboutSection {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.aboutSection h1 {
+    font-size: 1.3em;
+}
+.aboutSection p {
+    font-size: 0.8em;
+}
+
+/*******************************************************PORTFOLIO************************************************************/
+
+
+.portfolioSection {
+    margin-top: 120px;
+}
+
+#portfolioContainer {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 0 0;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.col {
+    margin: 10px;
+    height: 300px;
+    width: 350px;
+    border-radius: 10px;;
+}
+
+.project1 {
+    background-image: url('../img/shp2020.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.project2 {
+    background-image: url('../img/gemmasite.png');
+    background-size: cover;
+    background-position: center;
+}
+.project3 {
+    background-image: url('../img/reactfacerecognition.png');
+    background-size: cover;
+    background-position: center;
+}
+.project4 {
+    background-image: url('../img/chuck.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.project5 {
+    background-image: url('../img/spacecalc.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.project6 {
+    background-image: url('../img/restaurant.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.mouseOverWhite {
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.mouseOverWhite:hover {
+    opacity: 0.9;
+}
+
+.portText {
+    transition: 0.3s;
+    color: black;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.textActive {
+    transform: translateY(100px);
+    opacity: 1;
+}
+
+.textHidden {
+    opacity: 0;
+    transform: translateY(0px);
+}
+
+.mouseOverWhite button {
+    position: relative;
+    top: 130px;
+}
+
+.ctaButton {
+    margin: 5px;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.39);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.39);
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.39);
+    border-radius: 10px;
+    height: 35px;
+    width: 120px;
+    border: none;
+    text-decoration: none;
+    background: teal;
+    border: 1px solid #006d6d;
+    border-radius: 50em;
+    transition: 0.3s;
+    cursor: pointer;
+    color: white;
+}
+
+
+/******************************************* CONTACT SECTION ********************************************************/
+.contactSection {
+    background-image: url('../img/bigblueportfolio.png');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    color: white;
+}
+
+.contactSection h1 {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.socialDiv {
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 75px;
+}
+
+.socialDiv span a {
+    font-size: 48px; 
+    color: white;
+}
+
+.socialDiv span a:hover {
+    font-size: 80px; 
+}
+
+.socialDiv {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*** FOOTER ***/
+
+footer {
+    background-color: rgba(0,0,0,0);
+    height: 100px;
+    width: 100%;
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
+    padding-top: 100px;
+}
+
+/**************************************************************************************************************************************/
+/**************************************************************** MEDIA QUERIES *******************************************************/
+/**************************************************************************************************************************************/
+
+/*********************************** OTHER MOBILE QUERIES ***********************************/
+
+@media only screen and (max-width: 630px) {
+    .aboutContainer img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*********************************** TABLET MEDIA QUERIES ***********************************/  
+
+@media only screen and (min-width: 768px) and (max-width: 796px) {
+    .menu li a {
+        padding: 9px 5px;
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 780px) {
+
+    /******** SIZING / CONTAINERS ********/
+    .headerContainer {
+        height: 700px;
+    }
+
+    .portfolioSection {
+        margin-top: 220px;
+    }
+   
+}
+
+/***************************************** DESKTOP MEDIA QUERIES *****************************/
+
+@media only screen and (min-width: 1100px) {
+    .headerContainer {
+        margin: 0 auto;
+        height: 100vh;
+        padding-top: 45px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        width: 80%;
+    }
+
+    .headerTitleContainer {
+        margin-top: 320px;
+        align-self: flex-start;
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+
+    .headerTitleContainer h1 {
+        font-size: 5em;
+    }
+
+    .headerImageContainer {
+        align-self: flex-start;
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+
+    .headerImageContainer img {
+        width: 0px;
+    }
+
+    /** ABOUT **/
+
+    .aboutSection {
+    height: 100%;
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 33.3%);
+    height: 100%;
+}
+
+.aboutTextContainers, .aboutImageContainers {
+    margin-top: 5px;
+    padding: 20px;
+}
+
+.aboutTextContainers {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.aboutTextContainers h1 {
+    font-size: 2em;
+}
+
+.aboutTextContainers p {
+    font-size: 1.3em;
+}
+
+.aboutContainer img {
+    width: 530px;
+    height: auto;
+    border-radius: 50px;
+}
+
+#aboutImage1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+#aboutText1 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+#aboutImage2 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+#aboutText2 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+#aboutImage3 {
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+#aboutText3 {
+    padding-top: 50px;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+/********* CONTACT SECTION ********/
+
+.contactSection h1 {
+    padding-top: 250px;
+}
+
+.socialDiv {
+    width: 50%;
+}
+
+}
+
+@media only screen and (min-width: 1430px) {
+    #portfolioContainer {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    .aboutTextContainers {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 1710px) {
+   /******** SIZING / CONTAINERS ********/
+   .aboutTextContainers {
+    margin-top: 50px;
+}
+}
