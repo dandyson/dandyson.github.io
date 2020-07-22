@@ -1,3 +1,45 @@
+/**** SCROLL TO TOP ICON ****/
+
+.scrollToTop {
+    cursor: pointer;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 1;
+    bottom: 25px;
+    right: 0;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(300px);
+    transition: 0.3s ease-in-out;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(235,230,230,1) 0%, rgba(68,163,203,1) 0%, rgba(73,136,255,1) 100%, rgba(255,255,255,1) 100%, rgba(32,48,78,1) 100%, rgba(45,49,77,1) 100%, rgba(255,255,255,1) 100%);
+}
+
+.scrollShow {
+    transform: translateX(-20px);
+}
+
+.scrollHide {
+    transform: translateX(150px);
+}
+
+.scrollToTop:hover {
+    background: #008080;
+}
+
+.scrollToTop img {
+    height: 40px;
+}
+
+.scrollToTop img:hover {
+    height: 50px;
+    transition: 0.2s;
+}
+
 /************************** MOBILE DESIGN **************************/
 
 /**** GENERAL ****/
