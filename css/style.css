@@ -445,9 +445,9 @@ a {
 }
 
 .project1 {
-    background-image: url('../img/shp2020.png');
+    background-image: url('../img/onestop.png');
     background-size: cover;
-    background-position: center;
+    background-position: left;
 }
 
 .project2 {
