@@ -44,17 +44,23 @@ window.addEventListener('scroll', debounce(checkSlide));
 const toggle = document.querySelector('.toggle');
 const item = document.querySelectorAll('.item');
 const menu = document.querySelector('.menu');
+const brandTitle = document.querySelector('.brandTitle');
+const bars = document.querySelector('.bars');
 
 //MOBILE NAVIGATION POP OUT
 function openNav() {
     item.forEach(link => {
         if (link.classList.contains('active')) {
             link.classList.remove('active');
+            bars.classList.remove('active');
             menu.style.backgroundColor = 'rgba(0,0,0,0)';
+            brandTitle.style.color = "black";
         } else {
             link.classList.add('active');
-            menu.style.backgroundColor = 'rgb(37, 59, 96)';
+            bars.classList.add('active');
+            menu.style.backgroundColor = '#211189';
             menu.style.transition = '0.3s';
+            brandTitle.style.color = "white";
         }
     })
 }

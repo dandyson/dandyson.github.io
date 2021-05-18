@@ -9,11 +9,11 @@
 	<link rel="shortcut icon" href="/img/DDlogo.png" />
 	<!--Stylesheets-->
 	<link rel="stylesheet" href="css/style.css">
-	<!--Font-->
-	<link href="//db.onlinewebfonts.com/c/7bf226306214181d5e917ed5bda2301c?family=Norwester" rel="stylesheet"
-		type="text/css" />
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+	<!--Google Fonts-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 	<!--Font Awesome-->
 	<script src="https://kit.fontawesome.com/1b4cde8b92.js" crossorigin="anonymous"></script>
 	<!--Favicon-->
@@ -30,11 +30,11 @@
 	</a>
 
 	<div class=" mainContainer">
-		<div class="topBackgroundContainer" id="topBackgroundContainer">
+		<div id="topBackgroundContainer">
 			<!--NAV-->
-			<nav>
+			<nav class="stroke">
 				<ul class="menu">
-					<li class="logo"><a href="#"><img src="img/dandysonweblogoWhite.png" alt="logo"></a></li>
+					<li class="logo"><a href="#"><h1 class="brandTitle">Dan Dyson</h1></a></li>
 					<li class="item"><a href="#">Home</a></li>
 					<li class="item"><a href="#portfolioSection">Portfolio</a></li>
 					<li class="item"><a href="#aboutSection">About</a></li>
@@ -49,22 +49,29 @@
 			<!-- HEADER -->
 			<section class="header">
 				<div class="headerContainer">
-					<div class="headerImageContainer">
-						<img src="img/me.png" style="width: 300px" alt="">
-					</div>
 					<div class="headerTitleContainer">
-						<h1>Hi, I'm Dan</h1>
-
-						<h2>I love building websites.</h2>
+						<h1>Hi, I'm Dan, I'm a Web Developer</h1>
 						<a href="#portfolioSection"><button>SEE MY WORK</button></a>
+					</div>
+					<div class="headerImageContainer">
+						<video loop autoplay>
+							<source src="video/galaxy.mp4" type="video/mp4" />
+							Your browser does not support the video tag.
+						  </video>
 					</div>
 				</div>
 			</section>
 			<!--END OF HEADER-->
+			
 			<div class="contentContainer">
 				<!--PORTFOLIO-->
 
 				<section class="portfolioSection" id="portfolioSection">
+					<!-- WAVE -->
+					<div class="wave">
+						<svg id="wave" style="background: white; transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 420" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(62, 65.781, 243, 1)" offset="0%"></stop><stop stop-color="rgba(96.834, 11, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,252L40,273C80,294,160,336,240,343C320,350,400,322,480,259C560,196,640,98,720,91C800,84,880,168,960,189C1040,210,1120,168,1200,140C1280,112,1360,98,1440,105C1520,112,1600,140,1680,175C1760,210,1840,252,1920,231C2000,210,2080,126,2160,98C2240,70,2320,98,2400,98C2480,98,2560,70,2640,112C2720,154,2800,266,2880,315C2960,364,3040,350,3120,315C3200,280,3280,224,3360,217C3440,210,3520,252,3600,280C3680,308,3760,322,3840,287C3920,252,4000,168,4080,154C4160,140,4240,196,4320,196C4400,196,4480,140,4560,105C4640,70,4720,56,4800,105C4880,154,4960,266,5040,259C5120,252,5200,126,5280,112C5360,98,5440,196,5520,203C5600,210,5680,126,5720,84L5760,42L5760,420L5720,420C5680,420,5600,420,5520,420C5440,420,5360,420,5280,420C5200,420,5120,420,5040,420C4960,420,4880,420,4800,420C4720,420,4640,420,4560,420C4480,420,4400,420,4320,420C4240,420,4160,420,4080,420C4000,420,3920,420,3840,420C3760,420,3680,420,3600,420C3520,420,3440,420,3360,420C3280,420,3200,420,3120,420C3040,420,2960,420,2880,420C2800,420,2720,420,2640,420C2560,420,2480,420,2400,420C2320,420,2240,420,2160,420C2080,420,2000,420,1920,420C1840,420,1760,420,1680,420C1600,420,1520,420,1440,420C1360,420,1280,420,1200,420C1120,420,1040,420,960,420C880,420,800,420,720,420C640,420,560,420,480,420C400,420,320,420,240,420C160,420,80,420,40,420L0,420Z"></path><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(95.011, 62, 243, 1)" offset="0%"></stop><stop stop-color="rgba(21, 7, 115, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,126L40,140C80,154,160,182,240,161C320,140,400,70,480,70C560,70,640,140,720,203C800,266,880,322,960,322C1040,322,1120,266,1200,231C1280,196,1360,182,1440,203C1520,224,1600,280,1680,252C1760,224,1840,112,1920,70C2000,28,2080,56,2160,63C2240,70,2320,56,2400,84C2480,112,2560,182,2640,210C2720,238,2800,224,2880,224C2960,224,3040,238,3120,210C3200,182,3280,112,3360,77C3440,42,3520,42,3600,98C3680,154,3760,266,3840,280C3920,294,4000,210,4080,154C4160,98,4240,70,4320,98C4400,126,4480,210,4560,252C4640,294,4720,294,4800,266C4880,238,4960,182,5040,196C5120,210,5200,294,5280,308C5360,322,5440,266,5520,210C5600,154,5680,98,5720,70L5760,42L5760,420L5720,420C5680,420,5600,420,5520,420C5440,420,5360,420,5280,420C5200,420,5120,420,5040,420C4960,420,4880,420,4800,420C4720,420,4640,420,4560,420C4480,420,4400,420,4320,420C4240,420,4160,420,4080,420C4000,420,3920,420,3840,420C3760,420,3680,420,3600,420C3520,420,3440,420,3360,420C3280,420,3200,420,3120,420C3040,420,2960,420,2880,420C2800,420,2720,420,2640,420C2560,420,2480,420,2400,420C2320,420,2240,420,2160,420C2080,420,2000,420,1920,420C1840,420,1760,420,1680,420C1600,420,1520,420,1440,420C1360,420,1280,420,1200,420C1120,420,1040,420,960,420C880,420,800,420,720,420C640,420,560,420,480,420C400,420,320,420,240,420C160,420,80,420,40,420L0,420Z"></path><defs><linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(21, 7, 115, 1)" offset="0%"></stop><stop stop-color="rgba(21, 7, 115, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 100px); opacity:0.8" fill="url(#sw-gradient-2)" d="M0,336L40,294C80,252,160,168,240,147C320,126,400,168,480,168C560,168,640,126,720,112C800,98,880,112,960,119C1040,126,1120,126,1200,119C1280,112,1360,98,1440,119C1520,140,1600,196,1680,217C1760,238,1840,224,1920,238C2000,252,2080,294,2160,294C2240,294,2320,252,2400,238C2480,224,2560,238,2640,217C2720,196,2800,140,2880,154C2960,168,3040,252,3120,301C3200,350,3280,364,3360,329C3440,294,3520,210,3600,168C3680,126,3760,126,3840,126C3920,126,4000,126,4080,147C4160,168,4240,210,4320,210C4400,210,4480,168,4560,147C4640,126,4720,126,4800,112C4880,98,4960,70,5040,70C5120,70,5200,98,5280,91C5360,84,5440,42,5520,84C5600,126,5680,252,5720,315L5760,378L5760,420L5720,420C5680,420,5600,420,5520,420C5440,420,5360,420,5280,420C5200,420,5120,420,5040,420C4960,420,4880,420,4800,420C4720,420,4640,420,4560,420C4480,420,4400,420,4320,420C4240,420,4160,420,4080,420C4000,420,3920,420,3840,420C3760,420,3680,420,3600,420C3520,420,3440,420,3360,420C3280,420,3200,420,3120,420C3040,420,2960,420,2880,420C2800,420,2720,420,2640,420C2560,420,2480,420,2400,420C2320,420,2240,420,2160,420C2080,420,2000,420,1920,420C1840,420,1760,420,1680,420C1600,420,1520,420,1440,420C1360,420,1280,420,1200,420C1120,420,1040,420,960,420C880,420,800,420,720,420C640,420,560,420,480,420C400,420,320,420,240,420C160,420,80,420,40,420L0,420Z"></path></svg>
+					</div>
+				<!--END OF WAVE-->
 					<h1 class="title">PORTFOLIO</h1>
 					<div class="portfolioBackgroundContainer">
 						<div id="portfolioContainer">
@@ -152,12 +159,19 @@
 				<!-- END OF PORTFOLIO -->
 
 				<!-- ABOUT -->
+									<!-- WAVE -->
+				<div class="wave">						
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+						<path fill="#211189" fill-opacity="1" d="M0,0L1440,224L1440,0L0,0Z"></path>
+					</svg>
+				</div>
+			
 				<h1 class="title" id="aboutTitle">ABOUT ME</h1>
 				<section class="aboutSection" id="aboutSection">
 					<div class="aboutContainer">
 
 						<div class="aboutImageContainers" id="aboutImage1">
-							<img src="img/laptop.png" alt="laptop" id="about1Img">
+							<img src="img/pc.png" alt="laptop" id="about1Img">
 						</div>
 						<div class="aboutTextContainers" id="aboutText1">
 							<h1>I believe in simple, clean and effective websites and apps.</h1>
@@ -165,12 +179,12 @@
 								difference
 								having a website made!</p>
 						</div>
-
+						
 						<div class="aboutImageContainers" id="aboutImage2">
-							<img src="img/mobile.png" alt="laptop">
+							<img src="img/team.png" alt="laptop">
 						</div>
 						<div class="aboutTextContainers" id="aboutText2">
-							<h1>I have a rich background in a wide range of industries</h1>
+							<h1>I am a team player with a background in a wide range of industries</h1>
 							<p>I have worked in the retail, finance and music industry - all of these have given me a
 								wide
 								spectrum of experience within the world.
@@ -178,7 +192,7 @@
 						</div>
 
 						<div class="aboutImageContainers" id="aboutImage3">
-							<img src="img/cosmos.png" alt="laptop">
+							<img src="img/telescope.png" alt="laptop">
 						</div>
 						<div class="aboutTextContainers" id="aboutText3">
 							<h1>I love to expand my horizons</h1>
@@ -195,6 +209,7 @@
 
 			<!-- CONTACT SECTION-->
 			<section class="contactSection" id="contactSection">
+				<div class="contactSectionContent">
 				<h1>Let's Get In Touch</h1>
 				<div class="contactContainer">
 					<div class="socialDiv">
@@ -222,12 +237,8 @@
 				</div>
 
 				<!--END OF CONTACT SECTION -->
-
-				<!--FOOTER-->
-				<footer>
-					<p>Site made entirely with pure HTML, CSS and Javascript. No libraries or frameworks used.</p>
-				</footer>
-				<!--END OF FOOTER-->
+				
+			</div>
 			</section>
 		</div>
 

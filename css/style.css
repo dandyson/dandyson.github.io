@@ -1,3 +1,82 @@
+/************************************** TYPOGRAPHY *************************************************************/
+
+/* FONTS */
+
+.brandTitle {
+    font-size: 2.3rem;
+}
+
+nav {
+    font-size: 1.1em;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 800;
+}
+
+h1, h2 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 800;
+}
+
+.title {
+    font-family: 'Barlow', sans-serif;
+    font-size: 2.5em;
+}
+
+
+button {
+    font-family: 'Barlow', sans-serif;
+    letter-spacing: 0.1em;
+    font-weight: 800;
+}
+
+.headerTitleContainer h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.headerTitleContainer h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.aboutTextContainers h1 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.8em;
+    font-weight: 800;
+}
+
+.aboutTextContainers p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.portText {
+    font-family: 'Barlow-Regular', sans-serif;
+    letter-spacing: 0.1px;
+}
+
+.contactSection h1 {
+    font-size: 2.5em;
+}
+
+/**** COLOURS AND BACKGROUNDS ****/
+
+.mainContainer {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+
+nav li a, .button a, #headerText {
+    color: #222;
+}
+
+#headerText h1 {
+    text-shadow: 3px 3px 4px rgba(150, 150, 150, 1);
+    font-size: 2em;
+}
+
 /**** SCROLL TO TOP ICON ****/
 
 .scrollToTop {
@@ -15,8 +94,8 @@
     align-items: center;
     transform: translateX(300px);
     transition: 0.3s ease-in-out;
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(235,230,230,1) 0%, rgba(68,163,203,1) 0%, rgba(73,136,255,1) 100%, rgba(255,255,255,1) 100%, rgba(32,48,78,1) 100%, rgba(45,49,77,1) 100%, rgba(255,255,255,1) 100%);
+    background: rgb(93,91,255);
+    background: linear-gradient(180deg, rgba(93,91,255,1) 35%, rgba(122,17,221,1) 100%);
 }
 
 .scrollShow {
@@ -28,7 +107,8 @@
 }
 
 .scrollToTop:hover {
-    background: #008080;
+    background: rgb(59,142,255);
+background: linear-gradient(180deg, rgba(59,142,255,1) 35%, rgba(17,73,221,1) 100%);
 }
 
 .scrollToTop img {
@@ -39,6 +119,214 @@
     height: 50px;
     transition: 0.2s;
 }
+
+/***************************************** DESKTOP *****************************/
+
+
+.header {
+    height: 70vh;
+}
+
+.headerContainer button {
+    cursor: pointer;
+    transition: 0.2s;
+    height: 70px;
+    width: 220px;
+    font-size: 1em;
+    text-decoration: none;
+    background-color: #211189;
+    border-radius: 50em;
+    color: rgb(255, 255, 255);
+}
+
+.headerContainer button:hover {
+    background: rgb(93,91,255);
+    background: linear-gradient(180deg rgba(93,91,255,1) 35%, rgba(122,17,221,1) 100%);
+}
+
+    .headerTitleContainer, .headerImageContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .headerTitleContainer a {
+        margin-top: 3rem;
+    }
+
+    .headerImageContainer {
+        align-items: center;
+    }
+
+    .vsc-controller {
+        display: none !important;
+    }
+
+    .wave {
+        position: relative;
+        width: 100%;
+    }
+
+    /** ABOUT **/
+
+    .aboutSection {
+    height: 100%;
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .header {
+        height: 60vh;
+    }
+
+    .headerContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, auto);
+        justify-content: center;
+        align-items: start;
+        margin: 6rem 4.5rem 0 8.5rem;
+    }
+    
+    .headerTitleContainer {
+        align-items: start;
+        margin-top: 4rem;
+    }
+
+    .headerTitleContainer h1 {
+        font-size: 2.9rem;
+    }
+
+    video {
+        width: 25rem;
+    }
+}
+
+@media (min-width: 1300px) {
+    .headerContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, auto);
+        justify-content: center;
+        align-items: start;
+        margin: 6rem 10.5rem 0 16.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+
+.aboutSection img {
+    width: 70% !important
+}
+
+.aboutContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 33.3%);
+    height: 100%;
+}
+
+
+.aboutTextContainers, .aboutImageContainers {
+    margin-top: 5px;
+    padding: 20px;
+}
+
+.aboutImageContainers {
+    margin: 0px 40px 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutTextContainers {
+    width: 85%;
+    margin: 0 auto;
+    text-align: left !important;
+    align-items: start !important;
+}
+
+.aboutTextContainers h1 {
+    font-size: 2em !important;
+    margin-bottom: 1rem !important;
+}
+
+.aboutTextContainers p {
+    font-size: 1.3rem !important;
+}
+
+.aboutContainer img {
+    width: 75%;
+    height: auto;
+    border-radius: 50px;
+}
+
+#aboutImage1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+#aboutText1 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+#aboutImage2 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+#aboutText2 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+#aboutImage3 {
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+#aboutText3 {
+    padding-top: 50px;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+}
+/********* CONTACT SECTION ********/
+
+.socialDiv {
+    width: 50%;
+}
+
+
+
+@media only screen and (min-width: 1430px) {
+    #portfolioContainer {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    .aboutTextContainers {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 1710px) {
+   /******** SIZING / CONTAINERS ********/
+   .aboutTextContainers {
+    margin-top: 50px;
+}
+}
+
+/************************ STYLES FOR TESTING ****************************************/
+
+
 
 /************************** MOBILE DESIGN **************************/
 
@@ -51,8 +339,7 @@ html {
 body {
     margin: 0 auto;
     font-size: 1.1em;
-    letter-spacing: 0.1em;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Barlow', sans-serif;
 }
 
 .divider {
@@ -67,115 +354,19 @@ nav {
 }
 
 .title {
-    text-decoration: underline;
     text-align: center;
-    margin-top: 100px;
+}
+
+.portfolioSection .title {
+    color: #eee;
 }
 
 .ctaButton:hover {
     transform: scale(1.3);
-}
-
-.topBackgroundContainer {
-    position: absolute;
-    background: url("../img/bigbluedesktop.png") no-repeat;
-    background-size: 2000px 1000px;
-}
-
-/************************************** TYPOGRAPHY *************************************************************/
-
-/* FONTS */
-/* "Norwester" font */
-@import url(//db.onlinewebfonts.com/c/7bf226306214181d5e917ed5bda2301c?family=Norwester);
-@font-face {font-family: "Norwester"; src: url("//db.onlinewebfonts.com/t/7bf226306214181d5e917ed5bda2301c.eot"); src: url("//db.onlinewebfonts.com/t/7bf226306214181d5e917ed5bda2301c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7bf226306214181d5e917ed5bda2301c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/7bf226306214181d5e917ed5bda2301c.woff") format("woff"), url("//db.onlinewebfonts.com/t/7bf226306214181d5e917ed5bda2301c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/7bf226306214181d5e917ed5bda2301c.svg#Norwester") format("svg"); }
-
-nav {
-    font-size: 1.1em;
-    letter-spacing: 0.1em;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-}
-
-h1, h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-}
-
-.title {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2.5em;
-    font-weight: 800;
-}
-
-
-button {
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.1em;
-    font-weight: 800;
-}
-
-.headerTitleContainer h1 {
-    font-size: 2.5em;
-    margin: 0;
-}
-
-.headerTitleContainer h2 {
-    font-size: 2em;
-    margin: 0;
-}
-
-.aboutTextContainers h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.8em;
-    font-weight: 800;
-}
-
-.aboutTextContainers p {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-}
-
-.portText {
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.1px;
-}
-
-.contactSection h1 {
-    font-size: 2.5em;
-}
-
-/**** COLOURS AND BACKGROUNDS ****/
-
-body {
-    background-color: #FFFFFF
-}
-
-.mainContainer {
-    height: 100%;
-    width: 100%;
-    display: block;
-}
-
-
-nav li a {
-    color: rgb(255, 255, 255);
-}
-
-.button a {
-    color: white
-}
-
-#headerText {
-    color: rgb(233, 233, 233);
-}
-
-#headerText h1 {
-    text-shadow: 3px 3px 4px rgba(150, 150, 150, 1);
-    font-size: 2em;
-}
-
-.menu {
-    background-color: rgba(0,0,0,0);
+    background: rgb(93,91,255);
+    background: linear-gradient(
+180deg
+, rgba(93,91,255,1) 35%, rgba(122,17,221,1) 100%);
 }
 
 /**** NAVBAR ****/
@@ -207,30 +398,34 @@ a {
     display: block;
 }
 
-.item a:hover {
-    transform: scale(1.2);
-}
-
 .toggle {
     cursor: pointer;
 }
 
 
 .bars {
-    background: rgb(250, 250, 250);
+    background: #222;
     display: inline-block;
     height: 2px;
     position: relative;
     width: 18px;
 }
 
+.bars.active {
+    background: white;
+}
+
 .bars::before,.bars::after {
-    background: rgb(250, 250, 250);
+    background: #222;
     content: "";
     display: inline-block;
     height: 2px;
     position: absolute;
     width: 18px;
+}
+
+.bars.active::before, .bars.active::after  {
+    background: white;
 }
 
 .bars::before {
@@ -253,7 +448,7 @@ a {
 }
 
 .toggle {
-    padding-right: 15px;
+    padding: 0 15px;
     position: relative;
     bottom: 5px;
     order: 1;
@@ -261,7 +456,6 @@ a {
 }
 
 .item.button {
-    margin-right: 30px;
     order: 2;
 }
 
@@ -275,6 +469,11 @@ a {
 .item.active {
     display: block;
     transition: all 0.3s;
+    z-index: 1;
+}
+
+.item.active a {
+    color: white;
 }
 
 /**** Tablet Menu ****/
@@ -282,6 +481,7 @@ a {
 @media all and (min-width: 468px) {
     .menu {
         justify-content: center;
+        padding: 0 3rem;
     }
 
     .logo {
@@ -301,13 +501,16 @@ a {
 
     .button a {
         text-decoration: none;
-        background: teal;
-        border: 1px solid #006d6d;
+        border: 1px solid #211189;
         border-radius: 50em;
     }
 
     .button a:hover {
+        color: white;
         transition: .25s;
+        background: rgb(93,91,255);
+        background: linear-gradient(180deg, rgba(93,91,255,1) 35%, rgba(122,17,221,1) 100%);
+
     }
 
 }
@@ -338,6 +541,7 @@ a {
 
     .menu li {
         padding: 0;
+        font-size: 1.4rem;
     }
 
     .menu li.button {
@@ -348,60 +552,58 @@ a {
 
 /**************************************************** HEADER ********************************************************/
 
-.headerContainer {
-    height: 100vh;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
+@media (max-width: 992px) {
+.header {
+    margin: 3rem 0 3rem 0;
 }
 
 .headerContainer {
-    color: rgb(255, 255, 255);
-    margin: 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 13rem 17rem;
     justify-content: center;
 }
 
-.headerImageContainer img {
-    width: 150px;
-    margin: 30px;
+.headerTitleContainer {
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
-.headerContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+.headerTitleContainer h1 {
+    font-size: 2em;
+    width: 65%;
+    text-align: center;
+    margin: 0 auto;
 }
 
-.headerContainer button {
-    cursor: pointer;
-    transition: 0.2s;
-    margin: 30px;
-    height: 70px;
-    width: 220px;
-    font-size: 1em;
-    text-decoration: none;
-    background: teal;
-    border: 1px solid #006d6d;
-    border-radius: 50em;
-    color: rgb(255, 255, 255);
+.headerTitleContainer a {
+    text-align: center;
+    margin-top: 1rem;he
+}
+
+.headerImageContainer {
+    grid-row-start: 1;
+    grid-row-end: 2;    
+}
+
+.headerImageContainer video {
+    width: 250px;
+    z-index: -2;
 }
 
 .headerContainer button:hover {
     transform: scale(1.2);
 }
 
-
+}
 
 /**************************************************** ABOUT SECTION ****************************************************/
 
 .aboutSection img {
     border-radius: 15px;
     margin: 0 auto;
-    width: 500px;
-    height: 333px;
+    width: 60%;
+    height: auto;
 }
 
 .aboutSection {
@@ -415,8 +617,26 @@ a {
     text-align: center;
 }
 
+.aboutTextContainers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+#aboutText3 {
+    padding-top: 0;
+}
+
+.aboutImageContainers {
+    margin: 0;
+    padding: 0;
+}
+
 .aboutSection h1 {
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 .aboutSection p {
     font-size: 0.8em;
@@ -426,7 +646,7 @@ a {
 
 
 .portfolioSection {
-    margin-top: 320px;
+    background-color: #211189;
 }
 
 #portfolioContainer {
@@ -434,6 +654,7 @@ a {
     justify-content: center;
     padding: 10px 0 0 0;
     height: 100%;
+    padding-bottom: 7.5rem;
     flex-wrap: wrap;
 }
 
@@ -496,7 +717,7 @@ a {
 
 .portText {
     transition: 0.3s;
-    color: black;
+    color: #222;
     position: relative;
     width: 90%;
     margin: 0 auto;
@@ -527,18 +748,19 @@ a {
     width: 120px;
     border: none;
     text-decoration: none;
-    background: teal;
     border: 1px solid #006d6d;
     border-radius: 50em;
     transition: 0.3s;
     cursor: pointer;
+    background: rgb(59,142,255);
+    background: linear-gradient(180deg rgba(59,142,255,1) 35%, rgba(17,73,221,1) 100%);
     color: white;
 }
 
 
 /******************************************* CONTACT SECTION ********************************************************/
 .contactSection {
-    background-image: url('../img/bigblueportfolio.png');
+    background-image: url('../img/footerwave.svg');
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -546,9 +768,17 @@ a {
     color: white;
 }
 
+.contactSectionContent {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 12rem;
+}
+
 .contactSection h1 {
-    padding-top: 200px;
     text-align: center;
+    margin: 0;
 }
 
 .socialDiv {
@@ -602,6 +832,10 @@ footer p {
         width: 100%;
         height: auto;
     }
+
+    .menu {
+        padding-bottom: 3rem;
+    }
 }
 
 /*********************************** TABLET MEDIA QUERIES ***********************************/  
@@ -617,151 +851,39 @@ footer p {
 
     /******** SIZING / CONTAINERS ********/
     .headerContainer {
-        height: 700px;
-    }
-
-    .portfolioSection {
-        margin-top: 220px;
+        height: 45vh;
     }
    
 }
 
-/***************************************** DESKTOP MEDIA QUERIES *****************************/
-
-@media only screen and (min-width: 1100px) {
-    .headerContainer {
-        margin: 0 auto;
-        height: 100vh;
-        padding-top: 45px;
-        text-align: center;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 100%;
-        width: 80%;
-    }
-
-    .headerTitleContainer {
-        margin-top: 320px;
-        align-self: flex-start;
-        grid-row-start: 1;
-        grid-column-start: 1;
-    }
-
-    .headerTitleContainer h1 {
-        font-size: 5em;
-    }
-
-    .headerImageContainer {
-        align-self: flex-start;
-        grid-row-start: 1;
-        grid-column-start: 1;
-    }
-
-    .headerImageContainer img {
-        width: 0px;
-    }
-
-    /** ABOUT **/
-
-    .aboutSection {
-    height: 100%;
-    width: 90%;
-    margin: 50px auto;
-    text-align: center;
-    padding-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
 }
 
-.aboutContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(3, 33.3%);
-    height: 100%;
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
 }
 
-.aboutTextContainers, .aboutImageContainers {
-    margin-top: 5px;
-    padding: 20px;
+nav.stroke .item a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #211189;
+  height: 1px;
 }
+nav.stroke ul li a:hover:after {
+  width: 100%;
+} 
 
-.aboutTextContainers {
-    width: 85%;
-    margin: 0 auto;
-}
-
-.aboutTextContainers h1 {
-    font-size: 2em;
-}
-
-.aboutTextContainers p {
-    font-size: 1.3em;
-}
-
-.aboutContainer img {
-    width: 530px;
-    height: auto;
-    border-radius: 50px;
-}
-
-#aboutImage1 {
-    grid-column-start: 1;
-    grid-row-start: 1;
-}
-
-#aboutText1 {
-    grid-column-start: 2;
-    grid-row-start: 1;
-}
-
-#aboutImage2 {
-    grid-column-start: 2;
-    grid-row-start: 2;
-}
-
-#aboutText2 {
-    grid-column-start: 1;
-    grid-row-start: 2;
-}
-
-#aboutImage3 {
-    grid-row-start: 3;
-    grid-row-end: 5;
-}
-
-#aboutText3 {
-    padding-top: 50px;
-    grid-column-start: 2;
-    grid-row-start: 3;
-}
-
-/********* CONTACT SECTION ********/
-
-.contactSection h1 {
-    padding-top: 250px;
-}
-
-.socialDiv {
-    width: 50%;
-}
-
-}
-
-@media only screen and (min-width: 1430px) {
-    #portfolioContainer {
-        margin: 0 auto;
-        max-width: 1200px;
-    }
-
-    .aboutTextContainers {
-        margin-top: 30px;
-    }
-}
-
-@media only screen and (min-width: 1710px) {
-   /******** SIZING / CONTAINERS ********/
-   .aboutTextContainers {
-    margin-top: 50px;
-}
+.button a:after {
+    background: none !important;
 }
