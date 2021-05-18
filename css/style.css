@@ -647,6 +647,7 @@ a {
 
 .portfolioSection {
     background-color: #211189;
+    margin-bottom: -1px;
 }
 
 #portfolioContainer {
