@@ -1,31 +1,35 @@
 <script setup>
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
+import Nav from './components/Nav.vue'
+import MainHero from './components/MainHero.vue'
+import About from './components/About.vue'
+import Portfolio from './components/Portfolio.vue'
+import Contact from './components/Contact.vue'
+import Footer from './components/Footer.vue'
 </script>
 
-<template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
-</template>
+<script>
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
+export default {
+	created () {
+		AOS.init({
+			once: true,
+		});
+	}
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+</script>
+
+
+<template>
+  <section class="bg-gradient-to-b from-indigo-900 to-indigo-800">
+    <Nav />
+    <MainHero />
+  </section>
+  <About />
+  <Portfolio />
+  <Contact />
+  <Footer />
+</template>
