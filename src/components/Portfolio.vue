@@ -40,6 +40,7 @@
                     </p>
                   </div>
                   <a
+                    target="_blank"
                     v-if="item.githubUrl != ''"
                     :href="item.githubUrl"
                     class="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-violet-400 text-gray-900 grow-animation"
@@ -47,6 +48,7 @@
                     See Github Repo
                   </a>
                   <a
+                    target="_blank"
                     v-if="item.liveUrl != ''"
                     :href="item.liveUrl"
                     class="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-violet-400 text-gray-900 grow-animation"
