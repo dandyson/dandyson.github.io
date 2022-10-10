@@ -69,7 +69,8 @@ export default {
 
   mounted() {
     document.getElementById('contact-image').src = contactImage;
-  }
+    document.getElementById('download-cv').href = cv;
+  },
 
 }
 </script>
