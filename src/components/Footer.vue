@@ -1,5 +1,5 @@
 <template>
-	<footer class="px-4 py-8 dark:bg-gray-800 dark:text-gray-400 px-20 bg-gradient-to-b from-indigo-900 to-indigo-800">
+	<footer class="px-4 py-8 px-20 bg-gradient-to-b from-indigo-900 to-indigo-800">
 		<div class="container flex flex-wrap items-center justify-center mx-auto space-y-4 text-white">
 			<ul class="flex flex-wrap space-x-4 sm:space-x-8">
 				<li>

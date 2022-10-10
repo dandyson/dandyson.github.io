@@ -13,7 +13,7 @@
         <h2 class="text-4xl font-bold leading-tight lg:text-5xl">
           Let's talk!
         </h2>
-        <div class="dark:text-gray-400">Get in touch for a chat.</div>
+        <div>Get in touch for a chat.</div>
       </div>
       <img src="#" alt="Contact" id="contact-image" class="p-6 h-52 md:h-64" />
     </div>
@@ -24,7 +24,7 @@
               <font-awesome-icon :style="{ color: '#332F90' }" icon="fa-solid fa-envelope" size="3x" />
             </div>
             <div>
-              <p class="ml-8 text-lg font-medium leading-6 dark:text-gray-50">Email</p>
+              <p class="ml-8 text-lg font-medium leading-6">Email</p>
             </div>
           </a>
           <a href="https://github.com/dandyson" target="_blank" class="flex justify-start items-center reveal-animation">
@@ -32,7 +32,7 @@
               <font-awesome-icon :style="{ color: '#332F90' }" icon="fa-brands fa-github" size="3x" />
             </div>
             <div>
-              <p class="ml-8 text-lg font-medium leading-6 dark:text-gray-50">Github</p>
+              <p class="ml-8 text-lg font-medium leading-6">Github</p>
             </div>
           </a>
           <a href="https://www.linkedin.com/in/dandyson297/" target="_blank" class="flex justify-start items-center reveal-animation">
@@ -40,7 +40,7 @@
               <font-awesome-icon :style="{ color: '#332F90' }" icon="fa-brands fa-linkedin" size="3x" />
             </div>
             <div>
-              <p class="ml-8 text-lg font-medium leading-6 dark:text-gray-50">LinkedIn</p>
+              <p class="ml-8 text-lg font-medium leading-6">LinkedIn</p>
             </div>
           </a>
           <a href="#" target="_blank" id="download-cv" class="flex justify-start items-center reveal-animation">
@@ -48,7 +48,7 @@
               <font-awesome-icon :style="{ color: '#332F90' }" icon="fa-solid fa-file-arrow-down" size="3x" />
             </div>
             <div>
-              <p class="ml-8 text-lg font-medium leading-6 dark:text-gray-50">Download CV</p>
+              <p class="ml-8 text-lg font-medium leading-6">Download CV</p>
             </div>
           </a>
       </div>

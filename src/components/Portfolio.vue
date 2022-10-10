@@ -1,7 +1,7 @@
 <template>
   <section
     id="portfolio"
-    class="py-6 sm:py-12 dark:bg-gray-800 dark:text-gray-100 px-0 sm:px-20"
+    class="py-6 sm:py-12 px-0 sm:px-20"
     data-aos="fade-up"
     data-aos-offset="50"
     data-aos-duration="500"
@@ -11,11 +11,11 @@
     <div class="container p-6 mx-auto space-y-8">
       <div class="space-y-2 text-center" data-aos="fade">
         <h3
-          class="text-2xl font-bold tracking-tight sm:text-3xl dark:text-gray-50"
+          class="text-2xl font-bold tracking-tight sm:text-3xl"
         >
           Portfolio
         </h3>
-        <p class="mt-3 text-lg dark:text-gray-400">
+        <p class="mt-3 text-lg ">
           See what I have been up to!
         </p>
       </div>
