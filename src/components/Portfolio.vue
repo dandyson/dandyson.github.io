@@ -75,10 +75,10 @@ export default {
       portfolioItems: [
         { 
           name: 'Centre App',
-          description: '(In progress) - A Laravel/Vue.js project made to help people manage their mental health.',
+          description: '(In progress) - A Vue.js/Laravel/ SPA project made to help people manage their lives and their mental health.',
           image: centre,
-          githubUrl: '',
-          liveUrl: '',
+          githubUrl: 'https://github.com/dandyson/centre-app',
+          liveUrl: 'https://obscure-depths-55000-3a15d913072b.herokuapp.com/backend/dashboard',
         },
         {
           name: 'Facial Recognition App',
