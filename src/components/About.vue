@@ -114,7 +114,7 @@
 								</div>
 								<div class="ml-4">
 									<h4 class="text-lg font-medium leading-6">I have a big interest in all matters space</h4>
-									<p class="mt-2">I get regular newsletters from NASA regarding all things happening on the ISS and love to look at updates in the flight controller software for satellites. Facsinating stuff!.</p>
+									<p class="mt-2">I get regular newsletters from NASA regarding all things happening on the ISS and love to look at updates in the flight controller software for satellites. Fascinating stuff!.</p>
 								</div>
 							</div>
 							<div class="flex">
