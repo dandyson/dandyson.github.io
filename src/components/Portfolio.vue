@@ -14,7 +14,7 @@
         <div v-for="(item, index) in portfolioItems" :key="index"
           class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col mx-auto">
           <div class="h-60">
-            <img class="object-cover object-center w-full h-full rounded-t-md" :src="item.image" alt="" />
+            <img class="object-cover object-center w-full h-full rounded-t-md" :src="item.image" :alt="'portfolio image' + index" />
           </div>
           <div class="p-5 flex flex-col justify-between flex-grow bg-gradient-to-b from-indigo-900 to-indigo-800">
             <a href="#">
