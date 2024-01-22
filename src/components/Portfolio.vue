@@ -13,11 +13,9 @@
       <div class="grid grid-cols-1 gap-x-3 gap-y-8 md:grid-cols-2 lg:grid-cols-3">
         <div v-for="(item, index) in portfolioItems" :key="index"
           class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col mx-auto">
-          <a href="#">
-            <div class="h-60">
-              <img class="object-cover object-center w-full h-full rounded-t-md" :src="item.image" alt="" />
-            </div>
-          </a>
+          <div class="h-60">
+            <img class="object-cover object-center w-full h-full rounded-t-md" :src="item.image" alt="" />
+          </div>
           <div class="p-5 flex flex-col justify-between flex-grow bg-gradient-to-b from-indigo-900 to-indigo-800">
             <a href="#">
               <h5 class="mb-2 text-3xl font-bold tracking-tight text-white text-center md:text-left">{{ item.name }}</h5>
@@ -51,27 +49,27 @@
 </template>
 
 <script>
-import centre from './../assets/centre-app.png';
-import reactFace from './../assets/react-face-recognition.png';
+import nexusflo from './../assets/nexusflo.png';
+import homeMovieHub from './../assets/homemoviehub.png';
 import oneStop from './../assets/one-stop.png';
 
 export default {
   data() {
     return {
       portfolioItems: [
-        { 
-          name: 'Centre App',
-          description: '(In progress) - A Vue.js/Laravel/ SPA project made to help people manage their lives and their mental health.',
-          image: centre,
-          githubUrl: 'https://github.com/dandyson/centre-app',
-          liveUrl: 'https://obscure-depths-55000-3a15d913072b.herokuapp.com/backend/dashboard',
-        },
         {
-          name: 'Facial Recognition App',
-          description: 'A React project made to test an image facial recognition API.',
-          image: reactFace,
-          githubUrl: 'https://github.com/dandyson/facerecognitionapp',
-          liveUrl: '',
+          name: 'Home Movie Hub',
+          description: 'A Laravel/Vue.js project which is essentially a "Netflix for home movies".',
+          image: homeMovieHub,
+          githubUrl: 'https://github.com/dandyson/homevideohub',
+          liveUrl: 'https://homemoviehub.com',
+        },
+        { 
+          name: 'NexusFlo',
+          description: 'A Laravel/Vue.js project made to help people manage their lives and their mental health.',
+          image: nexusflo,
+          githubUrl: 'https://github.com/dandyson/nexusflo',
+          liveUrl: 'https://nexusflo-136651299275.herokuapp.com/',
         },
         {
           name: 'One Stop Inventories',
