@@ -9,15 +9,39 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons'
+import { 
+    faEnvelope,
+    faFileArrowDown,
+    faCircleInfo,
+    faGlobe,
+    faBook,
+    faNoteSticky,
+    faScaleBalanced,
+    faTv,
+    faUserTie,
+    faMapLocationDot,
+    faClose,
+} from '@fortawesome/free-solid-svg-icons'
 
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 /* add icons to the library */
-library.add(faEnvelope, faGithub, faLinkedin, faFileArrowDown)
+library.add(
+    faEnvelope,
+    faGithub,
+    faLinkedin,
+    faFileArrowDown,
+    faCircleInfo,
+    faGlobe,
+    faBook,
+    faNoteSticky,
+    faScaleBalanced,
+    faTv,
+    faUserTie,
+    faMapLocationDot,
+    faClose,
+)
 
 createApp(App)
-.component('font-awesome-icon', FontAwesomeIcon)
-.mount('#app')
+    .component('font-awesome-icon', FontAwesomeIcon)
+    .mount('#app')
