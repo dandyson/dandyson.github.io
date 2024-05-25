@@ -68,6 +68,16 @@ export default {
             mainImage: "http://localhost:5173/src/assets/homemoviehub-cover.png",
             infoContent: {
               title: "A central place for Home Movies",
+              techStack: [
+                {
+                  logo: 'fa-brands fa-vuejs',
+                  colour: '#3FB280',
+                },
+                {
+                  logo: 'fa-brands fa-laravel',
+                  colour: '#F72C20',
+                },
+              ],
               desc: "HomeMovieHub is a secure place online for users to stream their precious home videos, with features such as:",
               points: [
                 {
@@ -104,6 +114,16 @@ export default {
             mainImage: "http://localhost:5173/src/assets/nexusflo.png",
             infoContent: {
               title: "An innovative tool crafted with Laravel/Vue.js designed to enhance productivity and support personal growth.",
+              techStack: [
+                {
+                  logo: 'fa-brands fa-vuejs',
+                  colour: '#3FB280',
+                },
+                {
+                  logo: 'fa-brands fa-laravel',
+                  colour: '#F72C20',
+                },
+              ],
               desc: "NexusFlo helps users to organise their thoughts and emotions to allow them a better perspective on the situations they go through, with features such as:",
               points: [
                 {

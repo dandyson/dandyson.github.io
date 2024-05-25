@@ -23,7 +23,12 @@ import {
     faClose,
 } from '@fortawesome/free-solid-svg-icons'
 
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { 
+    faGithub,
+    faLinkedin,
+    faVuejs,
+    faLaravel,
+} from '@fortawesome/free-brands-svg-icons'
 
 /* add icons to the library */
 library.add(
@@ -40,6 +45,8 @@ library.add(
     faUserTie,
     faMapLocationDot,
     faClose,
+    faVuejs,
+    faLaravel
 )
 
 createApp(App)

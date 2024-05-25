@@ -49,10 +49,14 @@
 
                         <!-- Modal body -->
                         <div class="p-4 md:p-5 space-y-4">
-                            <div class="container max-w-xl p-6 py-12 mx-auto space-y-16 lg:px-8 lg:max-w-7xl">
+                            <div class="container flex flex-col justify-center items-center max-w-xl p-6 py-12 mx-auto space-y-16 lg:px-8 lg:max-w-7xl">
                                 <div>
-                                    <h2 class="text-3xl font-bold tracking-tight text-center sm:text-5xl">Project:
-                                        {{ mainTitle }} </h2>
+                                    <h2 class="text-3xl font-bold tracking-tight text-center sm:text-5xl">Project: {{ mainTitle }} </h2>
+                                    <div v-if="infoContent && infoContent.techStack" class="flex justify-center items-center my-8">
+                                        <div v-for="(tech, index) in infoContent.techStack" :key="index" class="flex flex-col justify-center items-center">
+                                            <font-awesome-icon v-if="tech.logo" class="mx-4" :style="{ color: tech.colour }" :icon="tech.logo" size="3x" />
+                                        </div>
+                                    </div>
                                     <p class="max-w-3xl mx-auto mt-4 text-xl text-center">{{ mainDescription }}</p>
                                 </div>
                                 <div class="flex justify-center px-12">
