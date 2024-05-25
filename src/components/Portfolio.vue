@@ -70,10 +70,12 @@ export default {
               title: "A central place for Home Movies",
               techStack: [
                 {
+                  name: 'Vue.js',
                   logo: 'fa-brands fa-vuejs',
                   colour: '#3FB280',
                 },
                 {
+                  name: 'Laravel',
                   logo: 'fa-brands fa-laravel',
                   colour: '#F72C20',
                 },
@@ -116,10 +118,12 @@ export default {
               title: "An innovative tool crafted with Laravel/Vue.js designed to enhance productivity and support personal growth.",
               techStack: [
                 {
+                  name: 'Vue.js',
                   logo: 'fa-brands fa-vuejs',
                   colour: '#3FB280',
                 },
                 {
+                  name: 'Laravel',
                   logo: 'fa-brands fa-laravel',
                   colour: '#F72C20',
                 },

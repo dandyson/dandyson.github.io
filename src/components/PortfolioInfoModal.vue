@@ -54,7 +54,7 @@
                                     <h2 class="text-3xl font-bold tracking-tight text-center sm:text-5xl">Project: {{ mainTitle }} </h2>
                                     <div v-if="infoContent && infoContent.techStack" class="flex justify-center items-center my-8">
                                         <div v-for="(tech, index) in infoContent.techStack" :key="index" class="flex flex-col justify-center items-center">
-                                            <font-awesome-icon v-if="tech.logo" class="mx-4" :style="{ color: tech.colour }" :icon="tech.logo" size="3x" />
+                                            <font-awesome-icon v-if="tech.logo" class="mx-4" :style="{ color: tech.colour }" :icon="tech.logo" size="3x" :title="tech.name" />
                                         </div>
                                     </div>
                                     <p class="max-w-3xl mx-auto mt-4 text-xl text-center">{{ mainDescription }}</p>
