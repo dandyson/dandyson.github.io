@@ -4,7 +4,6 @@ import BackgroundCircles from './components/BackgroundCircles.vue'
 import MainHero from './components/MainHero.vue'
 import About from './components/About.vue'
 import Portfolio from './components/Portfolio.vue'
-import BlogList from './components/BlogList.vue'
 import Contact from './components/Contact.vue'
 import Footer from './components/Footer.vue'
 </script>
