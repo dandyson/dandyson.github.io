@@ -1,10 +1,10 @@
 <script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import Nav from './components/Nav.vue'
+import BackgroundCircles from './components/BackgroundCircles.vue'
 import MainHero from './components/MainHero.vue'
 import About from './components/About.vue'
 import Portfolio from './components/Portfolio.vue'
+import BlogList from './components/BlogList.vue'
 import Contact from './components/Contact.vue'
 import Footer from './components/Footer.vue'
 </script>
@@ -24,7 +24,8 @@ export default {
 
 
 <template>
-  <section class="bg-gradient-to-b from-indigo-900 to-indigo-800">
+  <section class="relative bg-gradient-to-b from-indigo-900 to-indigo-800">
+    <BackgroundCircles />
     <Nav />
     <MainHero />
   </section>
