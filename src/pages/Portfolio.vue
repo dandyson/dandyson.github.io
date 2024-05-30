@@ -1,54 +1,16 @@
-<template>
-  <section id="portfolio" class="py-6 sm:py-12 px-0 sm:px-20" data-aos="fade-up" data-aos-offset="50"
-    data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="true">
-    <div class="container p-6 mx-auto space-y-8">
-      <div class="space-y-2 text-center" data-aos="fade">
-        <h3 class="text-2xl font-bold tracking-tight sm:text-3xl">
-          Portfolio
-        </h3>
-
-        <p class="mt-3 text-lg ">
-          See what I have been up to!
-        </p>
-
-      </div>
-      <div class="grid grid-cols-1 gap-x-3 gap-y-8 md:grid-cols-2 lg:grid-cols-3">
-        <div v-for="(item, index) in portfolioItems" :key="index"
-          class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col mx-auto">
-          <div class="h-60">
-            <img class="object-cover object-center w-full h-full rounded-t-md" :src="item.image" :alt="'portfolio image' + index" />
-          </div>
-          <div class="p-5 flex flex-col justify-between flex-grow bg-gradient-to-b from-indigo-900 to-indigo-800">
-            <a href="#">
-              <h5 class="mb-2 text-3xl font-bold tracking-tight text-white text-center md:text-left">{{ item.name }}</h5>
-            </a>
-            <p class="mb-3 font-normal text-white flex-grow text-center md:text-left">{{ item.description }}</p>
-            <div class="flex flex-col md:flex-row">
-              <template v-if="item.modal">
-                <PortfolioInfoModal 
-                  :mainTitle="item.modal.mainTitle"
-                  :mainDescription="item.modal.mainDescription"
-                  :mainImage="item.modal.mainImage"
-                  :githubUrl="item.githubUrl"
-                  :liveUrl="item.liveUrl"
-                  :infoContent="item.modal.infoContent"
-                />
-              </template>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</template>
-
-<script>
-import { ref } from 'vue';
+<script setup>
+import Nav from '../components/Nav.vue'
+import BackgroundCircles from '../components/BackgroundCircles.vue'
+import Footer from '../components/Footer.vue'
 import nexusflo from './../assets/nexusflo.png';
 import homeMovieHub from './../assets/homemoviehub.png';
-import oneStop from './../assets/one-stop.png';
-import PortfolioInfoModal from './PortfolioInfoModal.vue';
+import PortfolioInfoModal from '../components/PortfolioInfoModal.vue';
 
+</script>
+
+<script>
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default {
   components: { PortfolioInfoModal },
@@ -155,7 +117,7 @@ export default {
         {
           name: 'WayGenie',
           description: '**UNDER CONSTRUCTION** - An up-and-coming travel itinerary app powered by AI and built with Laravel/Vue.js',
-          image: nexusflo,
+          image: "http://localhost:5173/src/assets/coming-soon.jpeg",
           // githubUrl: '',
           // liveUrl: '',
           modal: {
@@ -169,3 +131,48 @@ export default {
   },
 }
 </script>
+
+<template>
+    <div>
+        <BackgroundCircles>
+            <Nav />
+            <section id="portfolio" class="py-6 sm:py-12 px-0 sm:px-20" data-aos="fade-up" data-aos-offset="50"
+                data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="true">
+                <div class="container p-6 mx-auto space-y-8">
+                    <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8" data-aos="fade">
+                        <h2 class="text-3xl lg:text-5xl tracking-tight font-extrabold mb-2 text-white">Portfolio </h2>
+                        <p class="font-light sm:text-xl text-gray-100">Recent Projects and Work</p>
+                    </div>
+                    <div class="grid grid-cols-1 gap-x-3 gap-y-8 md:grid-cols-2 lg:grid-cols-3">
+                        <div v-for="(item, index) in portfolioItems" :key="index"
+                            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col mx-auto">
+                            <div class="h-60">
+                                <img class="object-cover object-center w-full h-full rounded-t-md" :src="item.image"
+                                    :alt="'portfolio image' + index" />
+                            </div>
+                            <div
+                                class="p-5 flex flex-col justify-between flex-grow bg-white">
+                                <a href="#">
+                                    <h5
+                                        class="mb-2 text-3xl font-bold tracking-tight text-center md:text-left">
+                                        {{ item.name }}</h5>
+                                </a>
+                                <p class="mb-3 font-normal flex-grow text-center md:text-left">{{
+                            item.description }}</p>
+                                <div class="flex flex-col md:flex-row">
+                                    <template v-if="item.modal">
+                                        <PortfolioInfoModal :mainTitle="item.modal.mainTitle"
+                                            :mainDescription="item.modal.mainDescription"
+                                            :mainImage="item.modal.mainImage" :githubUrl="item.githubUrl"
+                                            :liveUrl="item.liveUrl" :infoContent="item.modal.infoContent" />
+                                    </template>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <Footer />
+        </BackgroundCircles>
+    </div>
+</template>
