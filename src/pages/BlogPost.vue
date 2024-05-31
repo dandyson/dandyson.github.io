@@ -6,9 +6,9 @@
         data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="true">
         <h1 class="text-2xl lg:text-4xl text-center font-bold mb-8">{{ post.title }}</h1>
         <div class="mb-8 text-gray-500 text-sm text-center">
-          Published on: {{ formattedDate }}
+          Published: {{ formattedDate }}
         </div>
-        <RichTextRenderer :content="post.content" />
+        <RichTextRenderer v-if="post.content" :content="post.content" />
       </div>
     </section>
     <Footer />
@@ -29,12 +29,17 @@ const post = ref({});
 
 onMounted(async () => {
   post.value = await getPost(route.params.id);
-  console.log(post.value);
 });
 
 const formattedDate = computed(() => {
   if (post.value.publishedDate) {
     const date = new Date(post.value.publishedDate);
+    const today = new Date();
+
+    if (date.toDateString() === today.toDateString()) {
+      return 'Today';
+    }
+
     return date.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
   }
   return '';

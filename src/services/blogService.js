@@ -13,7 +13,7 @@ export const getCategories = async () => {
 
 export const getAllPosts = async () => {
   const entries = await client.getEntries({ content_type: 'post' });
-  console.log({entries});
+
   return entries.items.map((item) => ({
     id: item.sys.id,
     createdAt: item.sys.createdAt,
@@ -60,6 +60,7 @@ export const getPostsByCategory = async (categoryName) => {
   });
   return response.items.map(item => {
     const { title, content, publishedDate, category } = item.fields;
+
     return {
       id: item.sys.id,
       title,

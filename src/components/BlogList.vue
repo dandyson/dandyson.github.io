@@ -16,7 +16,8 @@
                 {{ post.category }}
               </span>
               <span class="text-sm">
-                {{ formatDate(post.createdAt) }} ({{ daysAgo(post.createdAt) }} days ago)
+                {{ formatDate(post.createdAt) }} 
+                <span v-if="formatDate(post.createdAt) !== 'Today'">({{ daysAgo(post.createdAt) }} days ago)</span>
               </span>
             </div>
             <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
@@ -74,12 +75,25 @@ export default {
   methods: {
     formatDate(dateStr) {
       const date = new Date(dateStr);
+      const today = new Date();
+      
+      // Check if the date is today
+      if (
+        date.getDate() === today.getDate() &&
+        date.getMonth() === today.getMonth() &&
+        date.getFullYear() === today.getFullYear()
+      ) {
+        return 'Today';
+      }
+
+      // If not today, format the date
       return date.toLocaleDateString('en-US', {
         year: 'numeric',
         month: 'short',
         day: 'numeric'
       });
     },
+
     daysAgo(dateStr) {
       const postDate = new Date(dateStr);
       const now = new Date();
