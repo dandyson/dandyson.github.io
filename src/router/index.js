@@ -25,18 +25,18 @@ const routes = [
     component: Portfolio,
     meta: { transition: 'fade' },
   },
-  {
-    path: '/blog',
-    name: 'Blog',
-    component: Blog,
-    meta: { transition: 'fade' },
-  },
-  {
-    path: '/blog/:id',
-    name: 'BlogPost',
-    component: BlogPost,
-    meta: { transition: 'fade' },
-  },
+  // {
+  //   path: '/blog',
+  //   name: 'Blog',
+  //   component: Blog,
+  //   meta: { transition: 'fade' },
+  // },
+  // {
+  //   path: '/blog/:id',
+  //   name: 'BlogPost',
+  //   component: BlogPost,
+  //   meta: { transition: 'fade' },
+  // },
   {
     path: '/contact',
     name: 'Contact',
