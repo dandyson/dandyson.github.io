@@ -36,8 +36,8 @@ jobs:
           VITE_CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           VITE_CONTENTFUL_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_ACCESS_TOKEN }}
         run: |
-          sed -i "s/VITE_CONTENTFUL_SPACE_ID/$VITE_CONTENTFUL_SPACE_ID/" assets/*.js
-          sed -i "s/VITE_CONTENTFUL_ACCESS_TOKEN/$VITE_CONTENTFUL_ACCESS_TOKEN/" assets/*.js
+          sed -i "s/VITE_CONTENTFUL_SPACE_ID/$VITE_CONTENTFUL_SPACE_ID/" dist/assets/*.js
+          sed -i "s/VITE_CONTENTFUL_ACCESS_TOKEN/$VITE_CONTENTFUL_ACCESS_TOKEN/" dist/assets/*.js
 
   deploy:
     name: Deploy
