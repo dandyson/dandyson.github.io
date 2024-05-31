@@ -4,7 +4,9 @@ import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 
 const renderOptions = {
   renderNode: {
-    [BLOCKS.HEADING_3]: (node, next) => `<h3 class="text-2xl font-semibold mt-8 mb-2">${next(node.content)}</h3>`,
+    [BLOCKS.HEADING_3]: (node, next) => `<h3 class="text-3xl font-semibold mt-8 mb-2">${next(node.content)}</h3>`,
+    [BLOCKS.HEADING_4]: (node, next) => `<h3 class="text-2xl font-semibold mt-8 mb-2">${next(node.content)}</h3>`,
+    [BLOCKS.HEADING_5]: (node, next) => `<h3 class="text-xl font-bold mt-8 mb-2">${next(node.content)}</h3>`,
     [BLOCKS.PARAGRAPH]: (node, next) => `<p class="mb-4">${next(node.content)}</p>`,
     [BLOCKS.UL_LIST]: (node, next) => `<ul class="list-disc list-inmb-4">${next(node.content)}</ul>`,
     [BLOCKS.OL_LIST]: (node, next) => `<ol class="list-decimal list-inmb-4">${next(node.content)}</ol>`,
