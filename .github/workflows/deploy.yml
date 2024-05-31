@@ -36,10 +36,8 @@ jobs:
           VITE_CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           VITE_CONTENTFUL_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_ACCESS_TOKEN }}
         run: |
-          echo "VITE_CONTENTFUL_SPACE_ID=$VITE_CONTENTFUL_SPACE_ID" >> .env
-          echo "VITE_CONTENTFUL_ACCESS_TOKEN=$VITE_CONTENTFUL_ACCESS_TOKEN" >> .env
-          npm install
-          npm run build
+          sed -i "s/VITE_CONTENTFUL_SPACE_ID/$VITE_CONTENTFUL_SPACE_ID/" src/*.js
+          sed -i "s/VITE_CONTENTFUL_ACCESS_TOKEN/$VITE_CONTENTFUL_ACCESS_TOKEN/" src/*.js
 
   deploy:
     name: Deploy
