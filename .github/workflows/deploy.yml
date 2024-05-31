@@ -30,14 +30,6 @@ jobs:
         with:
           name: production-files
           path: ./dist
-      
-      # - name: Replace API keys
-      #   env:
-      #     VITE_CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
-      #     VITE_CONTENTFUL_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_ACCESS_TOKEN }}
-      #   run: |
-      #     sed -i "s/VITE_CONTENTFUL_SPACE_ID/$VITE_CONTENTFUL_SPACE_ID/" dist/assets/index.js
-      #     sed -i "s/VITE_CONTENTFUL_ACCESS_TOKEN/$VITE_CONTENTFUL_ACCESS_TOKEN/" dist/assets/index.js
 
   deploy:
     name: Deploy
@@ -56,4 +48,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          VITE_CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
+          VITE_CONTENTFUL_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_ACCESS_TOKEN }}
           publish_dir: ./dist

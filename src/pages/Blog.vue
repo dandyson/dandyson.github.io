@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
     <div class="min-h-screen">
         <BackgroundCircles customClasses="min-h-screen">
             <Nav />
@@ -15,4 +15,4 @@ import Nav from '../components/Nav.vue'
 import BackgroundCircles from '../components/BackgroundCircles.vue'
 import BlogList from '../components/BlogList.vue'
 import Footer from '../components/Footer.vue'
-</script> -->
+</script>

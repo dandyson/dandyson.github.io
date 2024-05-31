@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
   <BackgroundCircles class="min-h-screen ">
     <section class="relative z-10 py-10">
       <Nav />
@@ -50,4 +50,4 @@ ul.list-disc, ol.list-decimal {
 li > p {
   display: inline; /* Ensure the paragraph within list items is displayed inline */
 }
-</style> -->
+</style>
