@@ -36,8 +36,12 @@ jobs:
           VITE_CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
           VITE_CONTENTFUL_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_ACCESS_TOKEN }}
         run: |
-          sed -i 's/VITE_CONTENTFUL_SPACE_ID/'"$VITE_CONTENTFUL_SPACE_ID"'/' dist/js/app.*.js
-          sed -i 's/VITE_CONTENTFUL_ACCESS_TOKEN/'"$VITE_CONTENTFUL_ACCESS_TOKEN"'/' dist/js/app.*.js
+          # Find the built JavaScript file in the dist directory
+          JS_FILE=$(find dist -name "app.*.js")
+
+          # Replace API keys in the JavaScript file
+          sed -i 's/VITE_CONTENTFUL_SPACE_ID/'"$VITE_CONTENTFUL_SPACE_ID"'/' $JS_FILE
+          sed -i 's/VITE_CONTENTFUL_ACCESS_TOKEN/'"$VITE_CONTENTFUL_ACCESS_TOKEN"'/' $JS_FILE
 
   deploy:
     name: Deploy
