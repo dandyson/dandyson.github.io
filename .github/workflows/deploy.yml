@@ -30,6 +30,14 @@ jobs:
         with:
           name: production-files
           path: ./dist
+      
+      - name: Replace API keys
+        env:
+          VITE_CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
+          VITE_CONTENTFUL_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_ACCESS_TOKEN }}
+        run: |
+          sed -i 's/VITE_CONTENTFUL_SPACE_ID/'"$VITE_CONTENTFUL_SPACE_ID"'/' dist/js/app.*.js
+          sed -i 's/VITE_CONTENTFUL_ACCESS_TOKEN/'"$VITE_CONTENTFUL_ACCESS_TOKEN"'/' dist/js/app.*.js
 
   deploy:
     name: Deploy
