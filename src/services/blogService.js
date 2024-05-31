@@ -1,10 +1,16 @@
 // src/services/blogService.js
 import { createClient } from 'contentful';
 
+console.log({
+    'import.meta': import.meta,
+    'import.meta.env': import.meta.env,
+})
+
 const client = createClient({
   space: import.meta.env.VITE_CONTENTFUL_SPACE_ID,
   accessToken: import.meta.env.VITE_CONTENTFUL_ACCESS_TOKEN,
 });
+
 
 export const getCategories = async () => {
   const response = await client.getEntries({ content_type: 'category' });
