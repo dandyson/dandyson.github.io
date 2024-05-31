@@ -12,9 +12,9 @@
 					<li class="flex items-center">
 						<router-link to="/portfolio" class="flex items-center px-4 h-10 text-white underline-animation">Portfolio</router-link>
 					</li>
-					<li class="flex items-center">
+					<!-- <li class="flex items-center">
 						<router-link to="/blog" class="flex items-center px-4 h-10 text-white underline-animation">Blog</router-link>
-					</li>
+					</li> -->
 					<li class="flex items-center">
 						<router-link to="/contact" class="flex items-center px-4 h-10 text-white underline-animation">Contact</router-link>
 					</li>
@@ -36,9 +36,9 @@
 					<li>
 						<router-link to="/portfolio" :class="{ 'text-white bg-blue-700': $route.path === '/portfolio' }" class="block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0">Portfolio</router-link>
 					</li>
-					<li>
+					<!-- <li>
 						<router-link to="/blog" :class="{ 'text-white bg-blue-700': $route.path === '/blog' }" class="block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0">Blog</router-link>
-					</li>
+					</li> -->
 					<li>
 						<router-link to="/contact" :class="{ 'text-white bg-blue-700': $route.path === '/contact' }" class="block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0">Contact</router-link>
 					</li>

@@ -31,17 +31,13 @@ jobs:
           name: production-files
           path: ./dist
       
-      - name: Replace API keys
-        env:
-          VITE_CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
-          VITE_CONTENTFUL_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_ACCESS_TOKEN }}
-        run: |
-          # Find the built JavaScript file in the dist directory
-          JS_FILE=$(find dist -name "app.*.js")
-
-          # Replace API keys in the JavaScript file
-          sed -i 's/VITE_CONTENTFUL_SPACE_ID/'"$VITE_CONTENTFUL_SPACE_ID"'/' $JS_FILE
-          sed -i 's/VITE_CONTENTFUL_ACCESS_TOKEN/'"$VITE_CONTENTFUL_ACCESS_TOKEN"'/' $JS_FILE
+      # - name: Replace API keys
+      #   env:
+      #     VITE_CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
+      #     VITE_CONTENTFUL_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_ACCESS_TOKEN }}
+      #   run: |
+      #     sed -i 's/VITE_CONTENTFUL_SPACE_ID/'"$VITE_CONTENTFUL_SPACE_ID"'/' src/js/app.*.js
+      #     sed -i 's/VITE_CONTENTFUL_ACCESS_TOKEN/'"$VITE_CONTENTFUL_ACCESS_TOKEN"'/' src/js/app.*.js
 
   deploy:
     name: Deploy
