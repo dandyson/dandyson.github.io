@@ -21,7 +21,7 @@
               </span>
             </div>
             <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-              <a :href="`/blog/${post.id}`">{{ post.title }}</a>
+              <router-link :to="`/blog/${post.id}`">{{ post.title }}</router-link>
             </h2>
             <p class="mb-5 font-light text-gray-500">
               {{ post.excerpt || truncateText(post.content, 200) }}

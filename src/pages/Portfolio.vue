@@ -2,14 +2,21 @@
 import Nav from '../components/Nav.vue'
 import BackgroundCircles from '../components/BackgroundCircles.vue'
 import Footer from '../components/Footer.vue'
-import nexusflo from './../assets/nexusflo.png';
-import homeMovieHub from './../assets/homemoviehub.png';
+import nexusFlo from './../assets/webp/nexusflo.webp';
+import nexusFloWorryJournal from './../assets/webp/nexusflo-worry-journal.webp';
+import nexusFloGeneralNotes from './../assets/webp/nexusflo-general-notes.webp';
+import nexusFloWorryBalancer from './../assets/webp/nexusflo-worry-balancer.webp';
+import homeMovieHub from './../assets/webp/homemoviehub.webp';
+import homeMovieHubUi from './../assets/webp/homemoviehub-ui.webp';
+import homeMovieHubCover from './../assets/webp/homemoviehub-cover.webp';
+import homeMovieHubProfile from './../assets/webp/homemoviehub-profile.webp';
+import homeMovieHubMap from './../assets/webp/homemoviehub-map.webp';
+import comingSoon from './../assets/png-jpeg/coming-soon.jpeg';
 import PortfolioInfoModal from '../components/PortfolioInfoModal.vue';
 
 </script>
 
 <script>
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 export default {
@@ -27,7 +34,7 @@ export default {
           modal: {
             mainTitle: "HomeMovieHub",
             mainDescription: "A Netflix-like app which allows a secure place for users to stream their home movies",
-            mainImage: "http://localhost:5173/src/assets/homemoviehub-cover.png",
+            mainImage: homeMovieHubCover,
             infoContent: {
               title: "A central place for Home Movies",
               techStack: [
@@ -48,19 +55,19 @@ export default {
                   title: "Netflix-like UI",
                   desc: "A nice and family UI allows users to easily navigate their collection",
                   icon: "fa-solid fa-tv",
-                  image: "http://localhost:5173/src/assets/homemoviehub-ui.png",
+                  image: homeMovieHubUi,
                 },
                 {
                   title: "Personal Profiles",
                   desc: "Users can have each family member as a profile, which can be tagged in videos!",
                   icon: "fa-solid fa-user-tie",
-                  image: "http://localhost:5173/src/assets/homemoviehub-profile.png",
+                  image: homeMovieHubProfile,
                 },
                 {
                   title: "See locations",
                   desc: "Using the integrated Google Maps, users can pin the locations in their videos, allowing a better perspective of where they have been in the world",
                   icon: "fa-solid fa-map-location-dot",
-                  image: "http://localhost:5173/src/assets/homemoviehub-map.png",
+                  image: homeMovieHubMap,
                 },
               ],
             }
@@ -69,13 +76,13 @@ export default {
         {
           name: 'NexusFlo',
           description: 'A well-being app built with Laravel/Vue.js made to help people manage their lives and their mental health.',
-          image: nexusflo,
+          image: nexusFlo,
           githubUrl: 'https://github.com/dandyson/nexusflo',
           liveUrl: 'https://nexusflo.uk/',
           modal: {
             mainTitle: "NexusFlo",
             mainDescription: "A well-being app built with Laravel/Vue.js made to help people manage their lives and their mental health.",
-            mainImage: "http://localhost:5173/src/assets/nexusflo.png",
+            mainImage: nexusFlo,
             infoContent: {
               title: "An innovative tool crafted with Laravel/Vue.js designed to enhance productivity and support personal growth.",
               techStack: [
@@ -96,19 +103,19 @@ export default {
                   title: "Worry Journal",
                   desc: "The Worry Journal allows users to go through a wizard process to help them understand and balance their anxious thoughts",
                   icon: "fa-solid fa-book",
-                  image: "http://localhost:5173/src/assets/nexusflo-worry-journal.png",
+                  image: nexusFloWorryJournal,
                 },
                 {
                   title: "General Notebook",
                   desc: "For anything they need to remember, users have a notebook included",
                   icon: "fa-solid fa-note-sticky",
-                  image: "http://localhost:5173/src/assets/nexusflo-general-notes.png",
+                  image: nexusFloGeneralNotes,
                 },
                 {
                   title: "AI-powered 'Worry Balancer'",
                   desc: "Powered by OpenAI, this allows the user to get a more balanced perspective on their worries automatically!",
                   icon: "fa-solid fa-scale-balanced",
-                  image: "http://localhost:5173/src/assets/nexusflo-worry-balancer.png",
+                  image: nexusFloWorryBalancer,
                 },
               ],
             }
@@ -117,13 +124,13 @@ export default {
         {
           name: 'WayGenie',
           description: '**UNDER CONSTRUCTION** - An up-and-coming travel itinerary app powered by AI and built with Laravel/Vue.js',
-          image: "http://localhost:5173/src/assets/coming-soon.jpeg",
+          image: comingSoon,
           // githubUrl: '',
           // liveUrl: '',
           modal: {
             mainTitle: "WayGenie",
             mainDescription: "**UNDER CONSTRUCTION** - An up-and-coming travel itinerary app powered by AI and built with Laravel/Vue.js",
-            mainImage: "http://localhost:5173/src/assets/coming-soon.jpeg",
+            mainImage: comingSoon,
           },
         },
       ],
