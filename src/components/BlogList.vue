@@ -70,7 +70,7 @@ export default {
     };
   },
   async created() {
-    this.posts = this.listAllBlogs ? await getLatestEntries() : await getLatestEntries();
+    this.posts = this.listAllBlogs ? await getAllPosts() : await getLatestEntries();
   },
   methods: {
     formatDate(dateStr) {
