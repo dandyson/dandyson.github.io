@@ -11,7 +11,10 @@ import homeMovieHubUi from './../assets/webp/homemoviehub-ui.webp';
 import homeMovieHubCover from './../assets/webp/homemoviehub-cover.webp';
 import homeMovieHubProfile from './../assets/webp/homemoviehub-profile.webp';
 import homeMovieHubMap from './../assets/webp/homemoviehub-map.webp';
-import comingSoon from './../assets/png-jpeg/coming-soon.jpeg';
+import waygenieCover from './../assets/webp/waygenie-cover.webp';
+import waygenieLocation from './../assets/webp/waygenie-location.webp';
+import waygenieInterests from './../assets/webp/waygenie-interests.webp';
+import waygenieTravel from './../assets/webp/waygenie-travel.webp';
 import PortfolioInfoModal from '../components/PortfolioInfoModal.vue';
 
 </script>
@@ -123,14 +126,50 @@ export default {
         },
         {
           name: 'WayGenie',
-          description: '**UNDER CONSTRUCTION** - An up-and-coming travel itinerary app powered by AI and built with Laravel/Vue.js',
-          image: comingSoon,
-          // githubUrl: '',
-          // liveUrl: '',
+          description: 'A React.js/Express.js AI Travel Itinerary app designed to provide users with Itineraries for their travels',
+          image: waygenieCover,
+          githubUrl: 'https://github.com/dandyson/waygenie',
+          liveUrl: 'http://waygenie.s3-website.eu-west-2.amazonaws.com/',
           modal: {
             mainTitle: "WayGenie",
-            mainDescription: "**UNDER CONSTRUCTION** - An up-and-coming travel itinerary app powered by AI and built with Laravel/Vue.js",
-            mainImage: comingSoon,
+            mainDescription: "A cutting-edge tool that uses AI to create personalized travel itineraries for users.",
+            mainImage: waygenieCover,
+            infoContent: {
+              title: "WayGenie's intelligent system considers your interests—be it adventure, relaxation, culture, or cuisine—to create an itinerary that reflects what you love most about traveling.",
+              techStack: [
+                {
+                  name: 'React.js',
+                  logo: 'fa-brands fa-react',
+                  colour: '#61DBFB',
+                },
+                {
+                  name: 'Express.js',
+                  logo: 'fa-brands fa-node',
+                  colour: '#7FC727',
+                },
+              ],
+              desc: "WayGenie utilises AI to generate personalized travel itineraries. This project highlights expertise in modern JavaScript frameworks and server-side development, ensuring dynamic user experiences. It incorporates Cypress for end-to-end testing, guaranteeing robust functionality and a seamless travel planning process. It is deployed on both an AWS S3 Bucket as a web server, while the backend is being hosted on Heroku.",
+              points: [
+                {
+                  title: "Personalized Itineraries",
+                  desc: "By inputting your desired location, travel dates, interests, and travel style, WayGenie generates customized itineraries that highlight the best activities and experiences suited to you.",
+                  icon: "fa-solid fa-book",
+                  image: waygenieLocation,
+                },
+                {
+                  title: "Interest-Based Suggestions",
+                  desc: "WayGenie's intelligent system considers your interests—be it adventure, relaxation, culture, or cuisine—to create an itinerary that reflects what you love most about traveling.",
+                  icon: "fa-solid fa-note-sticky",
+                  image: waygenieInterests,
+                },
+                {
+                  title: "Travel Route Advice Included",
+                  desc: "Whether you're taking a car, bus, or walking, users receive tailored suggestions that help them navigate their destination efficiently, ensuring a smooth and stress-free travel experience.",
+                  icon: "fa-solid fa-scale-balanced",
+                  image: waygenieTravel,
+                },
+              ],
+            }
           },
         },
       ],

@@ -30,7 +30,9 @@ import {
     faGithub,
     faLinkedin,
     faVuejs,
+    faReact,
     faLaravel,
+    faNode,
 } from '@fortawesome/free-brands-svg-icons';
 
 /* add icons to the library */
@@ -49,7 +51,9 @@ library.add(
     faMapLocationDot,
     faClose,
     faVuejs,
+    faReact,
     faLaravel,
+    faNode,
     faList,
 );
 
