@@ -129,7 +129,7 @@ export default {
           description: 'A React.js/Express.js AI Travel Itinerary app designed to provide users with Itineraries for their travels',
           image: waygenieCover,
           githubUrl: 'https://github.com/dandyson/waygenie',
-          liveUrl: 'http://waygenie.s3-website.eu-west-2.amazonaws.com/',
+          liveUrl: 'https://d1tl42qtzfxokv.cloudfront.net',
           modal: {
             mainTitle: "WayGenie",
             mainDescription: "A cutting-edge tool that uses AI to create personalized travel itineraries for users.",
