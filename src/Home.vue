@@ -1,5 +1,6 @@
 <script setup>
 import Nav from './components/Nav.vue'
+import BlogList from './components/BlogList.vue'
 import BackgroundCircles from './components/BackgroundCircles.vue'
 import Footer from './components/Footer.vue'
 import computer from './assets/computer.svg';
@@ -43,7 +44,12 @@ export default {
           </div>
         </div>
       </section>
-      <Footer />
     </BackgroundCircles>
+    <section class="py-6 sm:px-20 bg-white">
+      <BlogList title="Latest From The Blog" data-aos="fade-up" data-aos-offset="50" />
+    </section>
+  <BackgroundCircles>
+    <Footer />
+  </BackgroundCircles>
   </div>
 </template>
