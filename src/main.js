@@ -12,51 +12,51 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 /* import specific icons */
 import { 
+    faBook,
+    faCircleInfo,
+    faClose,
     faEnvelope,
     faFileArrowDown,
-    faCircleInfo,
     faGlobe,
-    faBook,
+    faList,
+    faLock,
+    faMapLocationDot,
     faNoteSticky,
     faScaleBalanced,
     faTv,
     faUserTie,
-    faMapLocationDot,
-    faClose,
-    faList,
-    faLock,
 } from '@fortawesome/free-solid-svg-icons';
 
 import { 
     faGithub,
-    faLinkedin,
-    faVuejs,
-    faReact,
     faLaravel,
+    faLinkedin,
     faNode,
+    faReact,
+    faVuejs,
 } from '@fortawesome/free-brands-svg-icons';
 
 /* add icons to the library */
 library.add(
-    faEnvelope,
-    faGithub,
-    faLinkedin,
-    faFileArrowDown,
-    faCircleInfo,
-    faGlobe,
     faBook,
+    faCircleInfo,
+    faClose,
+    faEnvelope,
+    faFileArrowDown,
+    faGithub,
+    faGlobe,
+    faLaravel,
+    faLinkedin,
+    faList,
+    faLock,
+    faMapLocationDot,
+    faNode,
     faNoteSticky,
+    faReact,
     faScaleBalanced,
     faTv,
     faUserTie,
-    faMapLocationDot,
-    faClose,
     faVuejs,
-    faReact,
-    faLaravel,
-    faNode,
-    faList,
-    faLock,
 );
 
 createApp(App)
