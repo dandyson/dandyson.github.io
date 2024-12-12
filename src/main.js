@@ -24,6 +24,7 @@ import {
     faMapLocationDot,
     faClose,
     faList,
+    faLock,
 } from '@fortawesome/free-solid-svg-icons';
 
 import { 
@@ -55,6 +56,7 @@ library.add(
     faLaravel,
     faNode,
     faList,
+    faLock,
 );
 
 createApp(App)
