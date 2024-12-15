@@ -1,3 +1,15 @@
+<script>
+import cv from './../assets/cv.pdf';
+
+export default {
+
+  mounted() {
+    document.getElementById('download-cv-footer').href = cv;
+  },
+
+}
+</script>
+
 <template>
 	<footer class="px-4 py-8 px-20 bg-transparent">
 		<div class="container flex flex-wrap items-center justify-center mx-auto space-y-4 text-white">
@@ -15,6 +27,11 @@
 				<li>
 					<a class="grow-animation" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/dandyson297/">
 						<font-awesome-icon :style="{ color: '#FFF' }" icon="fa-brands fa-linkedin" size="2x" />
+					</a>
+				</li>
+				<li>
+					<a id="download-cv-footer" class="grow-animation" target="_blank" rel="noopener noreferrer" href="#">
+						<font-awesome-icon :style="{ color: '#fff' }" icon="fa-solid fa-file-arrow-down" size="2x" />
 					</a>
 				</li>
 			</ul>
