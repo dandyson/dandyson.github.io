@@ -14,7 +14,7 @@
                 class="text-xs font-medium inline-flex items-center py-0.5 rounded" :class="listAllBlogs ? 'text-gray-500' : 'text-white'">
                 <font-awesome-icon v-if="post.category === 'General'" class="mr-1" :style="{ color: listAllBlogs ? 'grey' : 'white' }" icon="fa-solid fa-list" size="1x" />
                 <font-awesome-icon v-else-if="post.category === 'GDPR & Security'" class="mr-1" :style="{ color: listAllBlogs ? 'grey' : 'white' }" icon="fa-solid fa-lock" size="1x" />
-                <font-awesome-icon v-else-if="post.category === 'AI & Robotics'" class="mr-1" :style="{ color: listAllBlogs ? 'grey' : 'white' }" icon="fa-solid fa-robot" size="1x" />
+                <font-awesome-icon v-else-if="post.category === 'Python & Robotics'" class="mr-1" :style="{ color: listAllBlogs ? 'grey' : 'white' }" icon="fa-solid fa-robot" size="1x" />
                 <font-awesome-icon 
                     v-else
                     class="mr-1" 
