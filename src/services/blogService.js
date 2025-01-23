@@ -44,7 +44,7 @@ export const getLatestEntries = async () => {
     createdAt: item.sys.createdAt,
     title: item.fields.title,
     content: item.fields.content,
-    category: item.fields.category.fields.name,
+    category: item.fields?.category?.fields?.name ?? 'General',
   }));
 };
 
